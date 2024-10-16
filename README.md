@@ -32,6 +32,13 @@
 ![image](https://github.com/user-attachments/assets/0972fd75-feed-49f7-8b70-57debac26f06)
 Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router (BDR)
 
+## Der Nutzen eines Designated Router (DR)
+- Creation of multiple adjacencies: es gibt dann einfach unnötig viele adjacencies
+- Extensive flooding of LSAs: jedes mal wenn sich etwas bei der topology ändert, flooden dann die router was zu unnötigen traffic führt wenn es so viele adjacencies gibt
+- Wenn man eben alle Sachen zu einen DR sendet, vermeidet man diese Probleme
+![image](https://github.com/user-attachments/assets/ef8b06a7-f6f6-4ee1-8e9e-7a8332fcf3f1)
+
+
 ## Link-state routing process to reach a state of convergence
 1. Verbindung zwischen routern aufbauen
 2. exchange Link-State Advertisements
