@@ -27,7 +27,6 @@
 ## Databases
 ![image](https://github.com/user-attachments/assets/59c1af44-f510-466b-a8f1-ce16d1d18aed)
 
-
 ## Exchange messages
 ![image](https://github.com/user-attachments/assets/0972fd75-feed-49f7-8b70-57debac26f06)
 Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router (BDR)
@@ -39,7 +38,6 @@ Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router 
 - Backup Designated Router (BDR) ist einfach ein backup Designated Router (DR), wenn der eben ausfällt
 - Alle anderen Router werden dann zu DROTHERs. Ein DROTHER ist ein router, der nicht der DR oder BDR ist
 ![image](https://github.com/user-attachments/assets/ef8b06a7-f6f6-4ee1-8e9e-7a8332fcf3f1)
-
 
 ## Link-state routing process to reach a state of convergence
 1. Verbindung zwischen routern aufbauen
@@ -61,19 +59,3 @@ OSPF Status:
 ![image](https://github.com/user-attachments/assets/af2cf362-f5dd-44a4-8415-55380c505b0c)
 
 Um festzustellen, ob ein OSPF-Nachbar im Link vorhanden ist, sendet der Router ein Hello-Paket mit seiner Router-ID über alle OSPF-aktivierten Schnittstellen an die reservierte Multicast-Adresse **224.0.0.5.**
-
-
-## Konvergenzprozess
-Der Prozess zur Erreichung der Konvergenz umfasst folgende Schritte:
-1. Nachbarschaften etablieren
-2. Link-State-Anzeigen austauschen
-3. LSDB aufbauen
-4. SPF-Algorithmus ausführen
-5. Beste Route auswählen
-
-## DR (Designated Router) und BDR (Backup Designated Router)
-In Multiaccess-Netzen werden DR und BDR gewählt, um:
-- LSAs effizient zu sammeln und zu verteilen.
-- Den Netzwerkverkehr zu optimieren und die Anzahl der erforderlichen Adjacency-Relationen zu reduzieren.
-
-
