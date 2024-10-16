@@ -7,6 +7,7 @@
 ## Allgemeines
 - OSPF ist ein link-state Routing-Protokoll.
 - Bietet Skalierbarkeit durch die Verwendung von Areas.
+- Eine Area ist eine Gruppe von Routern
 - Link-state speichert die gesamt topology.
 - Konvergenz in Netzwerken = Alle Router haben die gleiche, aktuelle Sicht auf die Netzwerktopologie.
 - Es gibt zwei Versionen:
@@ -23,9 +24,12 @@
 ## Databases
 ![image](https://github.com/user-attachments/assets/59c1af44-f510-466b-a8f1-ce16d1d18aed)
 
-
-
-
+## Link-state routing process to reach a state of convergence
+1. Verbindung zwischen routern aufbauen
+2. exchange Link-State Advertisements
+3. build Link State Database
+4. shortest path first algorithm ausfuehren also dijkstra
+5. Beste route aussuchen
 
 ## Status types
 OSPF Status:
