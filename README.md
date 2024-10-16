@@ -7,12 +7,25 @@
 ## Allgemeines
 - OSPF ist ein link-state Routing-Protokoll.
 - Bietet Skalierbarkeit durch die Verwendung von Areas.
-- Eine Area ist eine Gruppe von Routern
-- Link-state speichert die gesamt topology.
+- Link-state speichert die gesamte topology.
 - Konvergenz in Netzwerken = Alle Router haben die gleiche, aktuelle Sicht auf die Netzwerktopologie.
 - Es gibt zwei Versionen:
   - **OSPFv2**: Für IPv4
   - **OSPFv3**: Für IPv6
+
+## Areas
+- Eine Area ist eine Gruppe von Routern, die alle die selbe LSDB haben
+- Es gibt zwei Arten von Areas:
+  - **Single-Area OSPF**: Alle router sind zusammen einer Area, best practice ist area 0 hier zu verwenden
+  - **Multiarea OSPF**: Mehr als eine Area, die hierarchisch connected sind, d.h. alle Areas muessen mit area 0 connected sein. Router die die Areas verbinden heissen Area Border Routers (ABRs)
+
+  ## Vorteile von Multiarea OSPF
+  - Smaller routing tables
+  - Minimizes processing and memory requirements
+  - Reduced frequency of SPF calculations
+  
+      
+
 
 ## Exchange messages
 1. **Hello**: Entdecken von Nachbarn und Aufbau von Nachbarschaften.
