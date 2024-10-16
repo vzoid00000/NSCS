@@ -35,7 +35,9 @@ Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router 
 ## Der Nutzen eines Designated Router (DR)
 - Creation of multiple adjacencies: es gibt dann einfach unnötig viele adjacencies
 - Extensive flooding of LSAs: jedes mal wenn sich etwas bei der topology ändert, flooden dann die router was zu unnötigen traffic führt wenn es so viele adjacencies gibt
-- Wenn man eben alle Sachen zu einen DR sendet, vermeidet man diese Probleme
+- Wenn man eben alle Sachen zu einen Designated Router (DR) sendet, vermeidet man diese Probleme
+- Backup Designated Router (BDR) ist einfach ein backup Designated Router (DR), wenn der eben ausfällt
+- Alle anderen Router werden dann zu DROTHERs. Ein DROTHER ist ein router, der nicht der DR oder BDR ist
 ![image](https://github.com/user-attachments/assets/ef8b06a7-f6f6-4ee1-8e9e-7a8332fcf3f1)
 
 
