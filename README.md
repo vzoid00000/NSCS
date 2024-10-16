@@ -41,14 +41,17 @@ Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router 
 
 ## Status types
 OSPF Status:
-- **down**
-- **init**
-- **two-way**
-- **ExStart**
-- **Exchange**
-- **loading**
-- **full**
+- **Down state**
+- **Init state**
+- **Two-way state**
+- **ExStart state**
+- **Exchange state**
+- **Loading state**
+- **Full state**
+  
+![image](https://github.com/user-attachments/assets/af2cf362-f5dd-44a4-8415-55380c505b0c)
 
+Um festzustellen, ob ein OSPF-Nachbar im Link vorhanden ist, sendet der Router ein Hello-Paket mit seiner Router-ID über alle OSPF-aktivierten Schnittstellen an die reservierte Multicast-Adresse **224.0.0.5.**
 
 
 ## Konvergenzprozess
