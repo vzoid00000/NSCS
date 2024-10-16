@@ -7,7 +7,7 @@
 ## Allgemeines
 - OSPF ist ein link-state Routing-Protokoll.
 - Bietet Skalierbarkeit durch die Verwendung von Areas.
-- Link-state speichert die gesamte topology.
+- Link-state speichert die gesamte topology, anders als distance vector routing (z.B. RIP) was nur den next hop speichert, deswegen konvergiert link-state routing auch schneller als distance vector routing.
 - Konvergenz in Netzwerken = Alle Router haben die gleiche, aktuelle Sicht auf die Netzwerktopologie.
 - Es gibt zwei Versionen:
   - **OSPFv2**: Für IPv4
