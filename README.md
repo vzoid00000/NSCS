@@ -59,3 +59,22 @@ OSPF Status:
 ![image](https://github.com/user-attachments/assets/af2cf362-f5dd-44a4-8415-55380c505b0c)
 
 Um festzustellen, ob ein OSPF-Nachbar im Link vorhanden ist, sendet der Router ein Hello-Paket mit seiner Router-ID über alle OSPF-aktivierten Schnittstellen an die reservierte Multicast-Adresse **224.0.0.5.**
+
+
+## OSPF Router ID
+- OSPFv2 is enabled using the router ospf process-id global configuration mode command.
+- OSPF router ID ist eine 32-bit value, dargestellt als IPv4 address und ist ein unique identifier von einem OSPF Router und jedes OSPF packet beinhaltet die OSPF Router ID des Absenders.
+- Wofür die Router ID wichtig ist:
+  - Participate in the election of the designated router (DR) = Der Router mit der highest ID wird DR, der zweithösten BDR
+  - Participate in the synchronization of OSPF databases = Während Exchange State, sendet der router mit der highest ID sein DBD als erstes
+
+- Nach der Reihenfolge wird die Router ID bestimmt:
+  1. explicitly configured using the OSPF router-id rid
+  2. The router chooses the highest IPv4 address of any of configured loopback interfaces
+  3. The router chooses the highest IPv4 address of any of its physical interfaces
+
+     
+
+
+
+
