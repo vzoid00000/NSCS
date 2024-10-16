@@ -11,7 +11,7 @@
 - Konvergenz in Netzwerken = Alle Router haben die gleiche, aktuelle Sicht auf die Netzwerktopologie.
 - Es gibt zwei Versionen:
   - **OSPFv2**: Für IPv4
-  - **OSPFv3**: Für IPv6
+  - **OSPFv3**: Für IPv6, supportet aber auch IPv4
 
 ## Areas
 - Eine Area ist eine Gruppe von Routern, die alle die selbe LSDB haben
@@ -24,18 +24,13 @@
   - Minimizes processing and memory requirements
   - Reduced frequency of SPF calculations
   
-      
+## Databases
+![image](https://github.com/user-attachments/assets/59c1af44-f510-466b-a8f1-ce16d1d18aed)
 
 
 ## Exchange messages
-1. **Hello**: Entdecken von Nachbarn und Aufbau von Nachbarschaften.
-2. **Database Description (DBD)**: Informationen über die Link-State-Datenbank austauschen.
-3. **Link-State Request (LSR)**: Anfordern von spezifischen Link-State-Anzeigen.
-4. **Link-State Update (LSU)**: Versenden von Link-State-Anzeigen.
-5. **Link-State Acknowledgment (LSAck)**: Bestätigen des Empfangs von LSAs.
-
-## Databases
-![image](https://github.com/user-attachments/assets/59c1af44-f510-466b-a8f1-ce16d1d18aed)
+![image](https://github.com/user-attachments/assets/0972fd75-feed-49f7-8b70-57debac26f06)
+Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router (BDR)
 
 ## Link-state routing process to reach a state of convergence
 1. Verbindung zwischen routern aufbauen
