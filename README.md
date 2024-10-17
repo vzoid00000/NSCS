@@ -32,7 +32,8 @@
 - Hello: 
   - Elect the Designated Router (DR) and Backup Designated Router (BDR)
   - dead interval is 4 times the Hello interval
-  - Alle 10 sec sendet er ein packet 
+  - Alle 10 sec sendet er ein packet
+Ein Passiv Interface also zb ein interface wo ein host dranhängt, leitet keine packets weiter
 
 ## Der Nutzen eines Designated Router (DR)
 - Creation of multiple adjacencies: es gibt dann einfach unnötig viele adjacencies
