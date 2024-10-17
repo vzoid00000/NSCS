@@ -29,7 +29,10 @@
 
 ## Exchange messages
 ![image](https://github.com/user-attachments/assets/0972fd75-feed-49f7-8b70-57debac26f06)
-Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router (BDR)
+- Hello: 
+  - Elect the Designated Router (DR) and Backup Designated Router (BDR)
+  - dead interval is 4 times the Hello interval
+  - Alle 10 sec sendet er ein packet 
 
 ## Der Nutzen eines Designated Router (DR)
 - Creation of multiple adjacencies: es gibt dann einfach unnötig viele adjacencies
@@ -41,6 +44,8 @@ Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router 
 
 ## Link-state routing process to reach a state of convergence
 ![image](https://github.com/user-attachments/assets/bb584cf1-ef6f-433c-ae54-06e54416bbda)
+![image](https://github.com/user-attachments/assets/55dfc9ad-fa51-48d9-a805-038be27c5444)
+
 
 
 ## Status types
@@ -76,8 +81,12 @@ Um festzustellen, ob ein OSPF-Nachbar im Link vorhanden ist, sendet der Router e
 
 
 
-
-
+## LSAs
+- LSUs enthalen verschiedne LSAs
+- LSA enthält:
+  - state and cost of each directly connected link
+ 
+- Router flooden ihre LSAs zu ihren Neighbors
 
 
 
