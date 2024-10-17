@@ -33,7 +33,7 @@
   - Elect the Designated Router (DR) and Backup Designated Router (BDR)
   - dead interval is 4 times the Hello interval
   - Alle 10 sec sendet er ein packet
-Ein Passiv Interface also zb ein interface wo ein host dranhängt, leitet keine packets weiter
+Ein Passiv Interface also zb ein interface wo ein host dranhängt und leitet keine packets weiter
 
 ## Der Nutzen eines Designated Router (DR)
 - Creation of multiple adjacencies: es gibt dann einfach unnötig viele adjacencies
@@ -41,12 +41,15 @@ Ein Passiv Interface also zb ein interface wo ein host dranhängt, leitet keine 
 - Wenn man eben alle Sachen zu einen Designated Router (DR) sendet, vermeidet man diese Probleme
 - Backup Designated Router (BDR) ist einfach ein backup Designated Router (DR), wenn der eben ausfällt
 - Alle anderen Router werden dann zu DROTHERs. Ein DROTHER ist ein router, der nicht der DR oder BDR ist
+- DR so wird ausgewaehlt:
+  - er nimmt die höhste ospf priority 
+  - wenn zwei router die selbe priority haben, nimmt er die höhste router id
+  
 ![image](https://github.com/user-attachments/assets/ef8b06a7-f6f6-4ee1-8e9e-7a8332fcf3f1)
 
 ## Link-state routing process to reach a state of convergence
 ![image](https://github.com/user-attachments/assets/bb584cf1-ef6f-433c-ae54-06e54416bbda)
 ![image](https://github.com/user-attachments/assets/55dfc9ad-fa51-48d9-a805-038be27c5444)
-
 
 
 ## Status types
