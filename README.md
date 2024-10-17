@@ -40,11 +40,8 @@ Hello macht auch: Elect the Designated Router (DR) and Backup Designated Router 
 ![image](https://github.com/user-attachments/assets/ef8b06a7-f6f6-4ee1-8e9e-7a8332fcf3f1)
 
 ## Link-state routing process to reach a state of convergence
-1. Verbindung zwischen routern aufbauen
-2. exchange Link-State Advertisements
-3. build Link State Database
-4. shortest path first algorithm ausfuehren also dijkstra
-5. Beste route aussuchen
+![image](https://github.com/user-attachments/assets/bb584cf1-ef6f-433c-ae54-06e54416bbda)
+
 
 ## Status types
 OSPF Status:
