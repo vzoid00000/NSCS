@@ -74,6 +74,14 @@ Um festzustellen, ob ein OSPF-Nachbar im Link vorhanden ist, sendet der Router e
   3. The router chooses the highest IPv4 address of any of its physical interfaces
 
      
+## Features von OSPF
+![image](https://github.com/user-attachments/assets/4b53faab-3bba-49a9-8dc6-1e67179dca27)
+
+
+
+
+
+
 
 
 
