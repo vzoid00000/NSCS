@@ -77,7 +77,7 @@ Um festzustellen, ob ein OSPF-Nachbar im Link vorhanden ist, sendet der Router e
 - Nach der Reihenfolge wird die Router ID bestimmt:
   1. explicitly configured using the OSPF router-id rid
   2. The router chooses the highest IPv4 address of any of configured loopback interfaces
-  3. The router chooses the highest IPv4 address of any of its physical interfaces
+  3. The router chooses the highest IPv4 address of any of configured ipv4 address
 
      
 ## Features von OSPF
